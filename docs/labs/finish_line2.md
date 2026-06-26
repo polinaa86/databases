@@ -78,11 +78,14 @@ db.courses.insertMany([
 ```
 
 **Результат и проверка:**  
-![Скриншот PowerShell MongoDB](1.png)
+
+![Скриншот PowerShell MongoDB](../photo/1.png)
 
 Выводятся 5 документов с разной структурой:  
-![Скриншот MongoDB](2.png)
-![Скриншот MongoDB](3.png)
+
+![Скриншот MongoDB](../photo/2.png)
+
+![Скриншот MongoDB](../photo/3.png)
 - «Веб-разработка» – нет поля `active` и `prerequisites`.  
 - «Английский язык» – `modules` пуст, `active: false`.  
 - «Базы данных» содержит `prerequisites` и модуль «Устаревший модуль».
@@ -117,7 +120,8 @@ db.courses.find(
 )
 ```
 **Вывод:**
-![Скриншот PowerShell MongoDB](4.png)
+
+![Скриншот PowerShell MongoDB](../photo/4.png)
 
 **Задание 2.3** – курсы, где `active: true` ИЛИ `hours = 60`.
 
@@ -149,7 +153,8 @@ db.courses.updateOne(
 )
 ```
 **Результат:**  
-![Скриншот PowerShell MongoDB](5.png)
+
+![Скриншот PowerShell MongoDB](../photo/5.png)
 ```
 
 **Проверка:**
@@ -181,7 +186,8 @@ db.courses.updateMany(
 )
 ```
 **Результат:** 
-![Скриншот PowerShell MongoDB](6.png)
+
+![Скриншот PowerShell MongoDB](../photo/6.png)
 
 **Проверка:**
 ```javascript
@@ -201,7 +207,8 @@ db.courses.updateOne(
 ```javascript
 db.courses.findOne({ title: "Базы данных" }).modules
 ```
-![Скриншот PowerShell MongoDB](7.png)
+
+![Скриншот PowerShell MongoDB](../photo/7.png)
 
 Массив модулей теперь содержит `{ name: "Язык SQL", topics: ... }` вместо `"SQL"`.
 
