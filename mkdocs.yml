@@ -1,1 +1,57 @@
+site_name: Портфолио
+site_url: https://github.com/polinaa86/databases/
+repo_url: https://github.com/polinaa86/databases
+repo_name: databases
 
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+  palette:
+    - scheme: default
+      primary: pink
+      accent: purple
+      toggle:
+        icon: material/weather-sunny
+        name: Тёмная тема
+    - scheme: slate
+      primary: pink
+      accent: purple
+      toggle:
+        icon: material/weather-night
+        name: Светлая тема
+
+nav:
+  - Главная: index.md
+  - Лабораторные работы:
+    - Обзор: labs/index.md
+    - Задание 1: labs/1.md
+    - Задание 2: labs/2.md
+    - Задание 3: labs/3.md
+    - Задание 4: labs/4.md
+    - Задание 5: labs/5.md
+    - Задание 6: labs/6.md
+    - Лабораторная работа 6: labs/6LR.md
+    - BPMN: labs/BPMN.md
+    - finish_line1: labs/finish_line1.md
+    - finish_line2: labs/finish_line2.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tasklist
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
