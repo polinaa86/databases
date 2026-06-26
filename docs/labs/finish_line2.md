@@ -14,9 +14,9 @@
 **Листинг команд и результаты:**
 
 ```javascript
-use college
+use college // по отдельности, сначала это(для себя)
 
-db.createCollection("courses")
+db.createCollection("courses") //потом эта(для себя)
 
 db.courses.insertMany([
   {
